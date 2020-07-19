@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://beautifulcode.info',
   pathPrefix: '/',
-  title: 'the art of coding',
+  title: 'beautiful code',
   subtitle: 'tech and art',
   copyright: '© All rights reserved.',
   disqusShortname: '',
