@@ -1,6 +1,6 @@
 ---
 template: post
-slug: first-post
+slug: firebase-functions-template
 draft: false
 socialImage: /media/image-2.jpg
 title: Firebase Functions の雛形
