@@ -6,7 +6,7 @@ module.exports = {
   subtitle: 'tech and art',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 5,
+  postsPerPage: 10,
   googleAnalyticsId: 'UA-113237102-6',
   useKatex: false,
   menu: [
@@ -33,6 +33,10 @@ module.exports = {
     {
       label: 'atCoder',
       path: '/category/atcoder/'
+    },
+    {
+      label: 'きほん',
+      path: '/category/basic/'
     },
 
   ],
