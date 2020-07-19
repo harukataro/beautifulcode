@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       label: 'Visual Studio',
-      path: '/category/Visual-studio/'
+      path: '/category/visual-studio/'
     },
     {
       label: 'atCoder',
