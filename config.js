@@ -13,7 +13,28 @@ module.exports = {
     {
       label: 'Articles',
       path: '/'
-    }
+    },
+    {
+      label: 'Gatsby',
+      path: '/category/gatsby/'
+    },
+    {
+      label: 'Firebase',
+      path: '/category/firebase/'
+    },
+    {
+      label: 'Git',
+      path: '/category/git/'
+    },
+    {
+      label: 'Visual Studio',
+      path: '/category/Visual-studio/'
+    },
+    {
+      label: 'atCoder',
+      path: '/category/atcoder/'
+    },
+
   ],
   author: {
     name: 'mikoshiba',
