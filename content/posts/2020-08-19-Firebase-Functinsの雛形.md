@@ -6,9 +6,9 @@ socialImage: /media/image-2.jpg
 title: Firebase Functions の雛形
 date: 2020-07-19T02:16:12.190Z
 description: Firebase Functionsの拡張を考慮した雛形の提供。3つ以上のFunctionsをFirebaseと連携して使う場合などに便利
-category: firebase
+category: Firebase
 tags:
-  - firebase
+  - Firebase
 ---
 
 Firebase でよく Functions を活用してバックグラウンドの作業を遂行させています。ここでは私が最近つかっている雛形を記録しておきます。私の次回の作業にもこれから Firebase を活用される方の参考にもなるかと思います。
