@@ -72,6 +72,7 @@
     "katex": "^0.12.0",
     "lodash": "^4.17.19",
     "moment": "^2.27.0",
+    "netlify-cli": "^2.58.0",
     "netlify-cms-app": "^2.12.16",
     "node-sass": "^4.14.1",
     "normalize-scss": "^7.0.1",
