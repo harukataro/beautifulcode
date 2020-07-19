@@ -1,8 +1,7 @@
-'use strict';
-
 module.exports = {
   url: 'https://beautifulcode.info',
   pathPrefix: '/',
+  title: 'beautiful code',
   title: 'beautiful code',
   subtitle: 'tech and art',
   copyright: '© All rights reserved.',
@@ -37,4 +36,5 @@ module.exports = {
       youtube: '',
       soundcloud: '',
     }
-  },
+  }
+};
