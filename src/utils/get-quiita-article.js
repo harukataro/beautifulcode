@@ -14,7 +14,7 @@ const fetchItems = () => new Promise((resolve, reject) => {
         try {
           resolve(JSON.parse(rawData));
         } catch {
-          reject(e);
+          reject();
         }
       });
     })
