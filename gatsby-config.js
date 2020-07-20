@@ -17,9 +17,6 @@ module.exports = {
   plugins: [
     {
       resolve: 'gatsby-plugin-netlify-cache',
-      options: {
-       
-      }
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -211,11 +208,11 @@ module.exports = {
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: 'gatsby-remark-prismjs',
             options: {
               classPrefix: 'language-',
               inlineCodeMarker: null,
