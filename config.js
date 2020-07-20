@@ -30,8 +30,8 @@ module.exports = {
       path: '/category/visual-studio/'
     },
     {
-      label: 'atCoder',
-      path: '/category/atcoder/'
+      label: '競技プログラミング',
+      path: '/category/competitive-programming/'
     },
     {
       label: 'きほん',
