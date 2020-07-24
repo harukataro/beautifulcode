@@ -11,33 +11,32 @@ module.exports = {
   menu: [
     {
       label: 'Articles',
-      path: '/'
+      path: '/',
     },
     {
       label: 'Gatsby',
-      path: '/category/gatsby/'
+      path: '/category/gatsby/',
     },
     {
       label: 'Firebase',
-      path: '/category/firebase/'
+      path: '/category/firebase/',
     },
     {
       label: 'Git',
-      path: '/category/git/'
+      path: '/category/git/',
     },
     {
       label: 'Visual Studio',
-      path: '/category/visual-studio/'
+      path: '/category/visual-studio/',
     },
     {
       label: '競技プログラミング',
-      path: '/category/competitive-programming/'
+      path: '/category/competitive-programming/',
     },
     {
       label: 'きほん',
-      path: '/category/basic/'
+      path: '/category/basic/',
     },
-
   ],
   author: {
     name: 'mikoshiba',
@@ -47,7 +46,7 @@ module.exports = {
       email: '',
       facebook: '',
       telegram: '',
-      twitter: '',
+      twitter: 'mikoshibax',
       github: '',
       rss: '',
       vkontakte: '',
@@ -59,6 +58,6 @@ module.exports = {
       codepen: '',
       youtube: '',
       soundcloud: '',
-    }
-  }
+    },
+  },
 };

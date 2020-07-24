@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
 import type { MarkdownRemark } from '../types';
+import Sidebar from '../components/Sidebar';
 
 type Props = {
   data: {
@@ -22,7 +23,6 @@ const PostTemplate = ({ data }: Props) => {
   } = frontmatter;
   const metaDescription =
     postDescription !== null ? postDescription : siteSubtitle;
-
   return (
     <Layout
       title={`${postTitle} - ${siteTitle}`}
