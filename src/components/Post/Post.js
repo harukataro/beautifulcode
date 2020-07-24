@@ -20,12 +20,12 @@ const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
-  const { url } = useSiteMetadata();
+  const { url, title: siteTitle } = useSiteMetadata();
 
   return (
     <div className={styles['post']}>
       <Link className={styles['post__home-button']} to="/">
-        All Articles
+        {siteTitle}
       </Link>
 
       <div className={styles['post__content']}>
