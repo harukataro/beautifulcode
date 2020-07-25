@@ -16,6 +16,9 @@ exports[`NotFoundTemplate renders correctly 1`] = `
         <a
           href="/"
         >
+          <h3>
+            Test title
+          </h3>
           <img
             alt="Test name"
             className="author__photo"
