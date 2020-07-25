@@ -9,6 +9,7 @@ describe('Author', () => {
       name: 'test',
       photo: '/mikoshibax.jpeg',
       bio: 'test',
+      sitename: 'testSitename',
     },
     isIndex: false,
     title: 'test',
