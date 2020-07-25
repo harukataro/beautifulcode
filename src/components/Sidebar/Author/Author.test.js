@@ -1,21 +1,23 @@
 // @flow strict
-import React from 'react'
-import renderer from 'react-test-renderer'
-import Author from './Author'
+import React from 'react';
+import renderer from 'react-test-renderer';
+import Author from './Author';
 
 describe('Author', () => {
   const props = {
     author: {
       name: 'test',
       photo: '/mikoshibax.jpeg',
-      bio: 'test'
+      bio: 'test',
     },
     isIndex: false,
-    title: 'test'
-  }
+    title: 'test',
+  };
 
   it('renders correctly', () => {
-    const tree = renderer.create(<Author {...props} />).toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-})
+    const tree = renderer
+      .create(<Author {...props} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
