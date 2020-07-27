@@ -15,11 +15,11 @@ Wordpress のようにリンクを貼るだけで Twitter のツイートや You
 
 マークダウンファイルに下記の様にリンクをベタ書きするだけで埋め込みが完了するのだ。
 
-![oembed-1](../../static/media/oembed-1.png)
+![oembed-1](/media/oembed-1.png)
 
 この記載の結果はこちら
 
-![oembed-2](../../static/media/oembed-2.png)
+![oembed-2](/media/oembed-2.png)
 
 ワードプレスでは当たり前な感じになっている埋め込みが簡単にできるわけです。
 
@@ -83,7 +83,7 @@ oembed 問い合わせを行うときにオプションの指定ができるこ�
 Twitter: { maxwidth: 300, theme: 'dark' },
 ```
 
-![oembed-3](../../static/media/oembed-3-5850792.png)
+![oembed-3](/media/oembed-3-5850792.png)
 
 いわゆるダークモードとなっている。こちらは Gatsby-config なので動的に変更することはできませんが自分の Gatsby サイトにマッチした設定はさがしてみるのがいいのではないだろうか？
 
