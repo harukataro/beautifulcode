@@ -8,6 +8,8 @@ description: Eulerを解いてみよう。今日の話題は素数。
 category: Competitive programming
 tags:
   - Competitive programming
+hero: /media/hucker-club.jpg
+socialImage: /media/hucker-club.jpg
 ---
 
 ![](/media/hucker-club.jpg)
