@@ -8,7 +8,7 @@ description: Unreal Engine 4 のビューポートでのマウス操作をまと
 category: Unreal Engine
 tags:
   - Unreal Engine
-socialImage: /media/UnrealEngineUI.png
+socialImage: /media/UnrealEngineUI-6363390.png
 ---
 
 ![UnrealEngineUI](/media/UnrealEngineUI-6363390.png)
