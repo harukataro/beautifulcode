@@ -106,7 +106,7 @@ $ julia plot.jl
 
 すると plots.png にグラフが保存されます。結果はこちら
 
-![plots](/media/plots.png)
+![plots](/media/julia-plots.png)
 
 素敵じゃないですか！これで数学ラブな人の Hello World がスタートできましたね。
 
