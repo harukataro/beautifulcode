@@ -83,7 +83,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  limit: 1000,
+                  limit: 5,
                   sort: { order: DESC, fields: [frontmatter___date] },
                   filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
                 ) {

@@ -13,6 +13,8 @@ socialImage: /media/Julia-social.png
 
 ![Julia-social](/media/Julia-social.png)
 
+
+
 ## Julia とは
 
 まだまだマイナーなのでほとんどの方はしらないのでは無いでしょうか？
@@ -20,6 +22,8 @@ socialImage: /media/Julia-social.png
 Julia は最近開発されたプログラミング言語である。狙っている椅子は Python の占めている手軽に組めるデスクトップでの研究などに向けた使用用途である。
 
 Python の弱点の一つとして実行速度の遅さがある。この点に対して Julia は手当をしている。
+
+
 
 ## インストール方法
 
@@ -46,6 +50,8 @@ julia version 1.5.0
 vs Code の拡張機能検索にて Julia と検索しましょう。そうすると Julia チーム謹製の Julia プラグインが手に入ります
 
 ![julia-vscode](/media/julia-vscode.png)
+
+
 
 ## ライブラリーのインストール方法
 
@@ -74,6 +80,8 @@ julia>
 
 と入力しましょう。するとインストールを開始します。
 
+
+
 ## グラフを描いてみる
 
 さて数学ラブな人々の好きなグラフといえば Sin 波ですね。異論は認めますということで描写するプログラムを描いてみましょう。
@@ -82,19 +90,31 @@ julia>
 using Plots
 
 f(x) = sin(x)
-xs = range(1, 3.14 * 2; length=30)
+xs = range(0, 3.14 * 2; length=30)
 fs = f.(xs)
 plot(xs, fs)
 savefig("plots.png")
 ```
 
-こちらのプログラムを実行すると plots.png にグラフが保存されます。結果はこちら
+上記を plot.jl という名前で保存しましょう。
+
+こちらのプログラムを実行
+
+```bash
+$ julia plot.jl
+```
+
+すると plots.png にグラフが保存されます。結果はこちら
 
 ![plots](/media/plots.png)
 
 素敵じゃないですか！これで数学ラブな人の Hello World がスタートできましたね。
 
+
+
 ではまた会いましょう
+
+
 
 ## 参考ページ
 
