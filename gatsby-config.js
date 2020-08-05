@@ -116,7 +116,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `@raae/gatsby-remark-oembed`,
+            resolve: '@raae/gatsby-remark-oembed',
             options: {
               usePrefix: false,
               providers: {
