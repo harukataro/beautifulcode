@@ -40,7 +40,9 @@ Unity での開発を始めてしばらくは楽しくゲームを作ってい�
 
 にてアクセスができる。 Resolve と Force Resolve があるが、Force は一旦ライブラリーを削除して構築をしなおしているような動きに見える。これで問題が解決することも確かにあったが、今回直面したものは解決できなくさらなる努力をした。
 
-## Android SDK がアップデートできない
+
+
+## 1, Android SDK がアップデートできない
 
 Build 開始直後に現れると絶望するこのエラー
 
@@ -66,22 +68,25 @@ Build 開始直後に現れると絶望するこのエラー
 
 新たなライブラリーのアップデートを行った後、結局 Unity 自体をインストールし直してその後は Unity の保持する SDK を参照した状態で問題がなくなった。Unity Hub で比較的気軽に Uninstall Install ができるので試してもらうといいかと思う。
 
-## Gradle Build Error
+
+
+## 2, Gradle Build Error
 
 Gradle は Android の採用した Build システムである。これに追従して Unity も最近のバージョンでは Gradle Build をメインに据えた。そのために発生するようになったエラー群があるわけだ。
 
 有効かもしれないと思った施策は下記
 
 - .gradle の削除
+
 - gradle property の編集
 
-## .gradle の削除
+  
+
+### .gradle の削除
 
 build を一度でも行った場合、自分のホームフォルダー(User/xxx/)に .gradle 　フォルダーができている。
 
-このフォルダーがを削除しもう一度 Unity で Build を走らせると Unity お好みの Gradle がダウンロードされる。
-
-Gradle のバージョンコンフリクトの場合に効果を示すと思われる。
+**このフォルダーがを削除しもう一度 Unity で Build を走らせると Unity お好みの Gradle がダウンロードされる。Gradle のバージョンコンフリクトの場合に効果を示すと思われる。**
 
 Mac の場合初期設定では Dot から始まるファイルは見えなくなっている。表示する方法は **⌘ + Shift + .** で表示されるようになる。バサッと .gradle のフォルダーをゴミ箱にすてた。
 
@@ -89,15 +94,19 @@ Mac の場合初期設定では Dot から始まるファイルは見えなく�
 
 ## gradle property の編集
 
-エラーをしっかり読むと build.gradle のプロパティーがおかしいのでエラーをだしている旨が示されることがある。が、プロジェクトのフォルダーを検索しても build.gradle ならびに　 gradle.properties は見つからない。
+エラーをしっかり読むと build.gradle のプロパティーがおかしいのでエラーをだしている旨が示されることがある。が、Unityプロジェクトのフォルダーを検索しても build.gradle や gradle.properties は見つからない。
+
+
 
 Unity は Gradle の設定ファイルを Build するときに自動生成をするためだ。そのためインターネットの検索で引っかかる Android Studio での対処の記事はあなたの役にたたないかに見える...
 
+
+
 ### Unity での対応
 
-エラーが Gradle の設定の不具合を示していることがある。ただ、Unity でそのファイルそのものが見つけられず苦しんだ。Unity はそれらのファイルを Build 時に自動生成するという面倒な状態だからだ。
+Unity は Gradle 設定を自動生成するときの雛形にする設定を指定することができるのだ。ではどうすればいいのか？
 
-しなしながら、Unity は Gradle 設定を自動生成するときの雛形にする設定を指定することができるのだ。
+下記の設定に行こう
 
 **ファイル -> ビルド設定 -> プレイヤー設定**
 
@@ -107,7 +116,9 @@ Unity は Gradle の設定ファイルを Build するときに自動生成を�
 
 この設定の初期はチェックが入ってないと思う。私の場合は property を変更する必要があったので　カスタム Grade プロパティーテンプレートにチェックを入れた。
 
-**すると Unity の Assets/Plugins/Android のフォルダーに gradleTemplate.properties が生成される。**こちらのファイルを編集することで対応ができる。
+**すると Unity の Assets/Plugins/Android のフォルダーに gradleTemplate.properties が生成される。**該当ファイルを編集することで対応ができる。
+
+
 
 直面したエラーが useAndroidX の property を true にしなさいという旨のエラーだったため、２つのプロパティー(android.useAndroidX=true
 , android.enableJetifier=true)を gradleTemplate.properties に追記し build が通るようになった
