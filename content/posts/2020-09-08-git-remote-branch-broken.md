@@ -14,16 +14,24 @@ tags:
 
 ここ数カ月仕事をしているBranchがPush 99を示しています。移動してみると、追跡ブランチがリモートに存在していません。
 
+
+
+
+
 ## 解決策
 
 壊れてしまった参照を解決するために下記のファイルを削除しもう一度リモートブランチとローカルブランチを繋ぎなおす作業をして無事復旧しました。同様な問題に直面し、他のサイトをみても解決しない場合は、必ずソースコードを手動でバックアップしてから試してみてください。
 
 ```shell
-$ rm .git/refs/remotes/origin/troubleBranch`
+$ rm .git/refs/remotes/origin/troubleBranch
 
-$git branch -u origin/troubleBranch`
+$git branch -u origin/troubleBranch
 Branch 'troubleBranch' set up to track remote branch 'troubleBranch' from 'origin'.
 ```
+
+
+
+
 
 ## それまでの模索と便利なコマンド群の解説
 
@@ -63,7 +71,7 @@ hint: If you are planning to push out a new local branch that
 hint: will track its remote counterpart, you may want to use
 ```
 
-全然だめです。おちつこう。ステータスをみてみようか。この　git branch -vv　もなかなか使いでのあるコマンドです。覚えておこう。
+全然だめです。おちつこう。ステータスをみてみようか。git branch -vv　もなかなか使いでのあるコマンドです。覚えておこう。
 
 ```shell
 $ git branch -vv
@@ -93,9 +101,9 @@ From http://xxx
 どうやらremoteの情報は　.git/refs/remotes/origin にファイルとしてブランチごとに存在しているようです。
 
 ```shell
-$ rm .git/refs/remotes/origin/troubleBranch`
+$ rm .git/refs/remotes/origin/troubleBranch
 
-$git branch -u origin/troubleBranch`
+$git branch -u origin/troubleBranch
 Branch 'troubleBranch' set up to track remote branch 'troubleBranch' from 'origin'.
 
 $ git branch -vv
