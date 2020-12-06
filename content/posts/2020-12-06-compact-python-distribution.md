@@ -36,75 +36,69 @@ PythonのEnbeddable環境にてPythonの環境と実行ファイルを一つの�
 
 
 1. このサイト（[https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)）より、Download Windows x86-64 embeddable zip fileを見つけダウンロードし解凍
-
-2. pipのインストールファイルの入手。このサイト（[https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py)）にいき、上記のフォルダーにコピペなどでファイルを作成する
-
-3. コマンドをうちpipをインストール
-
-
+   
+2. pipのインストールファイルの入手。このサイト（[https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py)）にいき、上記のフォルダーにコピペなどでファイルを作成
+   
+3. pipをインストール
 
   ```bash
-
-  .\**python [get-pip.py](http://get-pip.py)**
-
+.\python get-pip.py
   ```
 
 4. Pathの変更
 
   Python38.ph内のimport siteの前の#を消す
 
+  ```Python
+python38.zip
+.
 
-
-  ```bash
-
-  python38.zip
-
-  .
-
-  Uncomment to run site.main() automatically
-
-  import site
-
+Uncomment to run site.main() automatically
+import site
   ```
+
 
 5. current.pthという名前でファイルを作り、下記を記載し保存
 
-
-
-  ```bash
-
-  import sys; sys.path.append('')
-
+  ```python
+import sys; sys.path.append('')
   ```
-
-
 
 6. 必要なライブラリーの追加(以下とある例）numpy—1.19.3は１．1.19.4のバグ回避の施策です。新しいバージョンがでたら削除してもいいかと
 
 
-
   ```bash
-
-  .\python -m pip install numpy==1.19.3 pandas openpyxl pywin32
-
+.\python -m pip install numpy==1.19.3 pandas openpyxl pywin32
   ```
-
 
 
 7. bat fileの作成
 
   実行したいpythonの名前が　task.pyであれば下記の様に記載した　task.batを作成
 
-```
+```bash
 .\python task.py
 ```
-
-
 
 8. 実行 
 
    task.batをダブルクリックでよい。ショートカットもこれにつければよい。
 
-
+   
 
   以上
+
+
+
+## 参照サイト
+
+https://bamch0h.hatenablog.com/entry/2019/09/29/162601
+
+https://qiita.com/mm_sys/items/1fd3a50a930dac3db299
+
+https://hokatsu.sakura.ne.jp/machine-learning/read-excel-with-python-embeddable/
+
+https://qiita.com/pocket_kyoto/items/80a1ac0e46819d90737f
+
+
+
